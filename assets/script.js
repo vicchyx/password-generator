@@ -24,7 +24,6 @@ function writePassword() {
 
 }
 
-
 // Const properties - Function to retrieve the data once the user has selected their criteria
 function generatePassword() {
 	const Cletters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
@@ -45,6 +44,30 @@ do {
     SpcCharcfm = confirm("Feeling like any special characters today?");
 } while (Cletterscfm === false && Lletterscfm === false && Numbrscfm === false && SpcCharcfm === false);
 
+// Using the concat for the variables above
+if (Cletterscfm) {
+
+pwd = pwd.concat(Cletters);
+}
+if (Lletterscfm) {
+    pwd = pwd.concat(Lletters);
+}
+if (Numbrscfm) {
+    pwd = pwd.concat(Numbers);
+}
+if (SpcCharcfm) {
+    pwd = pwd.concat(SpcChar);
+}
+
+//The code will create the random password based on the selection of the data provided in criteria section
+for (var i = 0; i < passLen; i++) {
+    passwordText = passwordText + pwd[Math.floor(Math.random() * pwd.length)];
+}
+
+//Where the passwordText variable is located
+return passwordText;
+
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
