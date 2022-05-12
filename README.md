@@ -6,7 +6,7 @@ This project it is a Password Generator website that uses JavaScript commands to
 It contains: 
 - Generate Password button
 
-Link to deployed application: [link here]
+Link to deployed application: https://vicchyx.github.io/test-03/
 
 
 Screenshots of project:
