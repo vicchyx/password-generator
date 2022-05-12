@@ -12,6 +12,7 @@ body,
   padding: 0;
 }
 
+/* Font & Background colour */
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
@@ -30,6 +31,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/* Card Properties */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -54,6 +56,7 @@ header {
   min-height: 100px;
 }
 
+/*Card Footer section */
 .card-footer {
   text-align: center;
 }
@@ -72,6 +75,7 @@ header {
   clear: both;
 }
 
+/* Button properties */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -102,6 +106,7 @@ button[disabled] {
   float: right;
 }
 
+/* Password Section Properties */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -123,6 +128,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* Responsive Properties */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
